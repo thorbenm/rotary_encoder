@@ -30,12 +30,15 @@ int rotary_encoder::update(int maxtime){
 	if(pulsein(pin_a,maxtime,0) > 0){
 		if(digitalRead(pin_b)){
 			position_change--;
+//			pulsein(pin_b,-1,1);
 		}else{
 			position_change++;
+//			pulsein(pin_b,-1,0);
 		}
+		pulsein(pin_a,-1,1);
 	}
 	position += position_change;
-	delay(25);
+//	delay(25);
 	return position;
 }
 

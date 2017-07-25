@@ -38,7 +38,7 @@ int rotary_encoder::update(int maxtime){
 		pulsein(pin_a,-1,1);
 	}
 	position += position_change;
-//	delay(25);
+	delay(2);
 	return position;
 }
 

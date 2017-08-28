@@ -2,6 +2,7 @@
 
 #include <wiringPi.h>
 #include <unistd.h>
+#include <thread>
 
 class rotary_encoder{
 public:

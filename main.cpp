@@ -1,6 +1,5 @@
 #include <iostream>
 #include "rotary_encoder.h"
-#include <thread>
 
 rotary_encoder r1(0,7);
 rotary_encoder r2(3,2);
